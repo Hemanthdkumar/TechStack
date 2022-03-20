@@ -302,6 +302,8 @@
   }
 </style>
 
+
+
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -349,6 +351,30 @@
     </svg>
 
   </div>
+
+  <div class="container" style="background-color: #ffffff;">  
+    
+    <h1> Display Data from Json File in Angular 13 </h1>  
+      
+    <table class="table table-striped">  
+      <thead>  
+          <tr>  
+            <th>ID</th>  onclick();
+            <th>Name</th>  
+            <th>Email</th>  
+            <th>Gender</th>  
+          </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let student of students">  
+          <td>{{ student.id }}</td>  
+          <td>{{ student.name }}</td>  
+          <td>{{ student.email }}</td>  
+          <td>{{ student.gender }}</td>  
+        </tr>  
+      </tbody>  
+    </table>  
+  </div>  
 
   <!-- Resources -->
   <h2>Resources</h2>

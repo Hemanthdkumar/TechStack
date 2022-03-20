@@ -1,4 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
+import { default as studentsData } from "./data.json";
+
+
+
+interface Student {  
+  id: Number;  
+  name: String;  
+  email: String;  
+  gender: String;  
+}  
 
 @Component({
   selector: 'app-root',
@@ -7,4 +17,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoApp';
+  students: Student[] = studentsData;  
 }
+
+
+
+
